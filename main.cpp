@@ -147,7 +147,7 @@ void thread_func(atomic_bool& stop, atomic_bool& thread_done, const atomic<size_
 				total_bytes_received += vc[i].packet_buf.size();
 
 				ostringstream oss;
-				oss << "thread id: " << thread_id << ", bytes received: " << vc[i].packet_buf.size() << ", ipaddress: " << vc[i].ip_addr << endl;
+				oss << "thread id: " << thread_id << ", bytes received: " << vc[i].packet_buf.size() << ", IP address: " << vc[i].ip_addr << endl;
 
 				vs.push_back(oss.str());
 			}
